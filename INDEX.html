@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Sublimagic — Informe Web</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+<style>
+  body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background:#f6f7f8;
+  }
+  .sidebar {
+    width:260px;
+    background:#FF6F6F;
+    position:fixed;
+    inset:0 auto 0 0;
+    padding:24px;
+    color:white;
+  }
+  .menu-btn {
+    display:flex;
+    align-items:center;
+    gap:10px;
+    width:100%;
+    padding:12px;
+    border-radius:10px;
+    font-weight:600;
+    transition:.3s;
+  }
+  .menu-btn:hover { background:rgba(255,255,255,0.18); }
+
+  .section-card {
+    background:white;
+    padding:28px;
+    border-radius:18px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.06);
+    animation:fade .4s ease;
+  }
+
+  @keyframes fade {
+    from{opacity:0; transform:translateY(10px);}
+    to{opacity:1; transform:none;}
+  }
+
+  .hidden-section { display:none; }
+
+  .placeholder {
+    background:#ececec;
+    width:100%;
+    height:100%;
+    border-radius:12px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:#999;
+    font-size:14px;
+  }
+</style>
+</head>
+
+<body>
+
+<!-- SIDEBAR -->
+<aside class="sidebar">
+
+    <div class="flex items-center gap-4 mb-6">
+        <img src="img/Logo4.png" class="w-14 h-14 rounded-lg object-contain"
+             onerror="this.outerHTML='<div class=placeholder style=\'width:60px;height:60px;\'>Logo</div>'">
+        <div>
+            <h2 class="font-extrabold text-xl">Sublimagic</h2>
+            <p class="text-sm opacity-80">INFORME PAGINA WEB SUBLIMAGICS</p>
+        </div>
+    </div>
+
+    <nav class="space-y-1 text-sm">
+
+        <button class="menu-btn" onclick="openSection('inicio')">Inicio</button>
+
+        <button class="menu-btn" onclick="openSection('intro')">1. Introducción</button>
+
+        <button class="menu-btn" onclick="openSection('just')">2. Justificación</button>
+
+        <button class="menu-btn" onclick="openSection('objetivos')">3. Objetivos del Proyecto</button>
+
+        <button class="menu-btn" onclick="openSection('metodo')">4. Metodología</button>
+
+        <button class="menu-btn" onclick="openSection('tec')">5. Tecnologías</button>
+
+        <button class="menu-btn" onclick="openSection('desarrollo')">6. Desarrollo</button>
+
+        <button class="menu-btn" onclick="openSection('resultados')">7. Resultados</button>
+
+        <button class="menu-btn" onclick="openSection('conclu')">8. Conclusiones</button>
+
+        <button class="menu-btn" onclick="openSection('creditos')">9. Créditos</button>
+
+        <button class="menu-btn" onclick="openSection('mapa')">10. Mapa del Sitio</button>
+
+    </nav>
+</aside>
+
+<!-- MAIN -->
+<main class="ml-[280px] p-10">
+
+<!-- INICIO -->
+<section id="inicio" class="section-card">
+
+    <img src="img/Logo (3).png" class="w-160 mx-auto mb-6"
+         onerror="this.outerHTML='<div class=placeholder>Logo</div>'">
+
+    <h1 class="text-4xl font-extrabold mb-3 text-[#FF6F6F]">Bienvenido al Informe de Sublimagic</h1>
+
+    <p class="text-gray-700 leading-relaxed text-lg mb-6">
+       Este informe detalla el proceso completo de concepción, desarrollo y lanzamiento de la plataforma
+ web de Sublimagic, un dinámico emprendimiento enfocado en la sublimación creativa y la personalización
+ de productos únicos. La necesidad de esta nueva presencia digital es estratégica: buscamos potenciar la marca en
+ el entorno online, optimizar radicalmente la experiencia del usuario y ofrecer un espacio profesional y seguro. 
+Este nuevo sitio permitirá a los clientes no solo explorar nuestro catálogo completo, sino también comprender 
+nuestro proceso de personalización y realizar sus pedidos de forma ágil y transparente. La web es ahora el centro 
+de operaciones de Sublimagic
+        <br><br>
+        Además, esta página sirve como evidencia del trabajo académico y práctico,
+        integrando investigación, diseño, desarrollo web y el uso de inteligencia artificial.
+   </p>
+</section>
+
+  </p>
+</section>
+
+
+<!-- INTRODUCCIÓN -->
+<section id="intro" class="section-card hidden-section">
+
+    <h2 class="text-5xl font-bold text-[#FF6F6F] mb-6">1. Introducción</h2>
+
+    <p class="text-gray-700 leading-relaxed mb-6">
+        El desarrollo de esta plataforma digital representa una respuesta estratégica a la
+        evolución del mercado y a la necesidad imperante de establecer una presencia en línea
+        robusta y profesional. Previamente, la interacción con los clientes se limitaba 
+        principalmente a canales sociales y de mensajería, lo cual imponía restricciones en la 
+        organización del catálogo, la escalabilidad y la percepción de marca.
+    </p>
+
+    <!-- Imagen con animación -->
+    <img src="img/wireframe.png"
+         class="rounded-xl w-full shadow-xl mb-6 fade-in"
+         onerror="this.outerHTML='<div class=placeholder>Mapa no disponible</div>'">
+
+    <p class="text-gray-700 leading-relaxed">
+        La creación de este sitio web tiene como objetivos primordiales fortalecer 
+        significativamente la imagen corporativa de Sublimagic, optimizar la experiencia de los 
+        usuarios mediante una interfaz clara e intuitiva, y proporcionar un espacio digital que 
+        funcione como una vitrina profesional. En este entorno, los clientes podrán navegar con 
+        facilidad para explorar el catálogo completo de productos disponibles, obtener información 
+        detallada sobre el proceso de personalización y cotización, y finalmente, realizar sus 
+        pedidos de manera organizada, segura y completamente transparente.
+        <br><br>
+        De esta forma, la plataforma web no solo mejora la visibilidad y el alcance de la marca, 
+        sino que también se consolida como una herramienta clave y fundamental para el crecimiento 
+        sostenido y la expansión comercial futura de Sublimagic.
+    </p>
+
+</section>
+<!-- JUSTIFICACIÓN -->
+<section id="just" class="hidden-section section-card">
+
+    <h2 class="text-3xl font-bold text-[#FF6F6F] mb-4">2. Justificación</h2>
+
+    <p class="text-gray-700 leading-relaxed mb-6">
+        La necesidad de una página web surge porque Sublimagic requería un espacio digital más organizado
+        que permitiera mostrar sus productos y servicios con claridad. Las redes sociales limitaban la forma
+        de presentar el catálogo y no ofrecían una navegación estructurada.
+        <br><br>
+        Con el sitio web se logra una plataforma más profesional, visualmente coherente y con una estructura clara.
+        Esto mejora la confianza del cliente, fortalece la marca y facilita el acceso a toda la información.
+    </p>
+
+    <img src="img/contenidos.png" class="rounded-xl w-full shadow-xl mb-6"
+         onerror="this.outerHTML='<div class=placeholder>Contenido no disponible</div>'">
+
+    <p class="text-gray-700 leading-relaxed">
+        La imagen anterior muestra los contenidos principales que estructuran la página web. 
+        Incluye secciones como inicio, productos, personalización, blog, galería, contacto y compras.
+        Este esquema permitió planificar adecuadamente la arquitectura del sitio y asegurar que
+        la navegación fuese intuitiva para los usuarios.
+    </p>
+
+</section>
+
+<!-- OBJETIVOS UNIFICADOS -->
+<section id="objetivos" class="hidden-section section-card">
+
+    <h2 class="text-3xl font-bold text-[#FF6F6F] mb-4">3. Objetivos del Proyecto</h2>
+
+    <h3 class="font-bold text-xl mt-4 mb-2">Objetivo General</h3>
+    <p class="text-gray-700 leading-relaxed">
+        Diseñar y desarrollar una página web profesional, estética y funcional que represente
+        fielmente la identidad de Sublimagic.
+    </p>
+
+    <h3 class="font-bold text-xl mt-6 mb-2">Objetivos Específicos</h3>
+    <ul class="list-disc pl-6 text-gray-700 leading-loose">
+        <li>Crear un diseño visual coherente con la marca.</li>
+        <li>Organizar la información en secciones claras y accesibles.</li>
+        <li>Implementar una navegación fácil y dinámica.</li>
+        <li>Agregar contacto directo vía WhatsApp para pedidos.</li>
+        <li>Aplicar IA y herramientas digitales modernas.</li>
+    </ul>
+
+</section>
+
+<!-- METODOLOGÍA -->
+<section id="metodo" class="hidden-section section-card">
+    <h2 class="text-3xl font-bold text-[#FF6F6F] mb-4">4. Metodología</h2>
+    <p class="text-gray-700 leading-relaxed">
+        Para el desarrollo de la página web de Sublimagic se implementó una metodología híbrida que combinó la planificación detallada con la adaptabilidad ágil.
+  <p class="text-gray-700 leading-relaxed">
+5.1 Diseño Centrado en el Usuario (UX/UI)
+Se inició con el análisis de las necesidades del público objetivo para crear una Arquitectura de la Información lógica y un Diseño de Interfaz (UI) que fuera visualmente atractivo y coherente con la identidad de la marca. Se priorizó la facilidad de navegación y la claridad en el flujo de pedidos.
+
+  <p class="text-gray-700 leading-relaxed">
+5.2 Prototipado
+Se utilizó un proceso de dos pasos para la validación visual y estructural:
+
+  <p class="text-gray-700 leading-relaxed">
+Wireframing: Creación de bocetos de baja fidelidad para definir la distribución del espacio y la funcionalidad básica.
+
+  <p class="text-gray-700 leading-relaxed">
+Mockups: Desarrollo de prototipos de alta fidelidad que integraron la paleta de colores, tipografías y elementos gráficos finales antes del inicio de la codificación.
+
+  <p class="text-gray-700 leading-relaxed">9
+5.3 Metodología Ágil (Iterativa)
+El proyecto se ejecutó en fases cortas e iterativas (ideación, diseño, desarrollo, pruebas), lo que permitió una mejora continua y la capacidad de integrar rápidamente la retroalimentación. Este enfoque garantizó un desarrollo eficiente y un producto final bien ajustado a los objetivos.
+
+  <img src="img/interfases.png" class="w-120 mx-auto"
+             onerror="this.outerHTML='<div class=placeholder>HTML</div>'">
+
+    </p>
+</section>
+
+<!-- TECNOLOGÍAS -->
+<section id="tec" class="hidden-section section-card">
+
+    <h2 class="text-3xl font-bold text-[#FF6F6F] mb-4">5. Tecnologías Utilizadas</h2>
+
+    <div class="grid grid-cols-2 gap-4 text-center">
+
+        <img src="img/html.png" class="w-50 mx-auto"
+             onerror="this.outerHTML='<div class=placeholder>HTML</div>'">
+
+        <img src="img/css.jpg" class="w-50 mx-auto"
+             onerror="this.outerHTML='<div class=placeholder>CSS</div>'">
+
+        <img src="img/ChatGPT-Logo.png" class="w-50 mx-auto"
+             onerror="this.outerHTML='<div class=placeholder>ChatGPT</div>'">
+
+        <img src="img/gemini.png" class="w-50 mx-auto"
+             onerror="this.outerHTML='<div class=placeholder>Gemini</div>'">
+
+        <img src="img/stitch.png" class="w-50 mx-auto"
+             onerror="this.outerHTML='<div class=placeholder>Stitch</div>'">
+
+        <img src="img/block notas.avif" class="w-25 mx-auto"
+             onerror="this.outerHTML='<div class=placeholder>Stitch</div>'">
+
+
+    </div>
+
+</section>
+
+<!-- DESARROLLO -->
+<section id="desarrollo" class="hidden-section section-card">
+    <h2 class="text-3xl font-bold text-[#FF6F6F] mb-4">6. Desarrollo</h2>
+    <p class="text-gray-700 leading-relaxed">
+        Se organizaron secciones principales como Inicio, Catálogo, Personalización, Contacto y Blog.
+        Se implementó un diseño suave, moderno y coherente.
+    </p>
+</section>
+
+<!-- MAPA DEL SITIO -->
+<section id="mapa" class="hidden-section section-card">
+    <h2 class="text-3xl font-bold text-[#FF6F6F] mb-4">10. Mapa del Sitio</h2>
+
+    <img src="img/mapa.png" class="rounded-xl w-full shadow-xl mb-6"
+         onerror="this.outerHTML='<div class=placeholder>Mapa no disponible</div>'">
+    </p>
+</section>
+
+
+<!-- RESULTADOS -->
+<section id="resultados" class="hidden-section section-card">
+    <h2 class="text-3xl font-bold text-[#FF6F6F] mb-4">7. Resultados</h2>
+    <p class="text-gray-700 leading-relaxed">
+        El sitio final logró mayor profesionalismo, claridad visual y confianza para los usuarios.
+
+        <img src="img/wireframe.png" class="w-51 mx-auto"
+             onerror="this.outerHTML='<div class=placeholder>HTML</div>'">
+
+        <img src="img/sobre nosotros.png" class="w-49 mx-auto"
+             onerror="this.outerHTML='<div class=placeholder>CSS</div>'">
+
+        <img src="img/Conocenos.png" class="w-50 mx-auto"
+             onerror="this.outerHTML='<div class=placeholder>ChatGPT</div>'">
+
+        <img src="img/escoge.png" class="w-50 mx-auto"
+             onerror="this.outerHTML='<div class=placeholder>Gemini</div>'">
+
+        <img src="img/mug blanco.png" class="w-50 mx-auto"
+             onerror="this.outerHTML='<div class=placeholder>Stitch</div>'">
+
+        <img src="img/personaliza.png" class="w-50 mx-auto"
+             onerror="this.outerHTML='<div class=placeholder>Stitch</div>'">
+
+        <img src="img/3.png" class="w-50 mx-auto"
+             onerror="this.outerHTML='<div class=placeholder>Gemini</div>'">
+
+        <img src="img/catalogo.png" class="w-50 mx-auto"
+             onerror="this.outerHTML='<div class=placeholder>Stitch</div>'">
+
+        <img src="img/catalogo2.png" class="w-50 mx-auto"
+             onerror="this.outerHTML='<div class=placeholder>Stitch</div>'">
+
+        <img src="img/carrito.png" class="w-50 mx-auto"
+             onerror="this.outerHTML='<div class=placeholder>Stitch</div>'">
+
+
+
+
+       
+    </p>
+</section>
+
+<!-- CONCLUSIONES -->
+<section id="conclu" class="hidden-section section-card">
+    <h2 class="text-3xl font-bold text-[#FF6F6F] mb-4">8. Conclusiones</h2>
+    <p class="text-gray-700 leading-relaxed">
+        9. Conclusiones Finales
+El proyecto de desarrollo de la página web de Sublimagic no solo cumplió con los objetivos planteados, sino que también demostró la eficacia de integrar metodologías modernas de diseño y programación con herramientas de Inteligencia Artificial. La implementación exitosa de la plataforma provee a Sublimagic de una base digital sólida, ofreciendo mayor visibilidad, un perfil más profesional y una experiencia de usuario optimizada que facilita la interacción y la solicitud de pedidos. Esta nueva herramienta se convierte en un recurso indispensable para el crecimiento estratégico del emprendimiento, permitiendo una mejor organización y posicionamiento en el mercado. Adicionalmente, el proyecto representó una oportunidad valiosa para el equipo desarrollador, permitiendo el refuerzo de habilidades clave en diseño centrado en el usuario, desarrollo web ágil y la aplicación práctica de IA para la optimización de contenidos.
+    </p>
+</section>
+
+<!-- CREDITOS -->
+<section id="creditos" class="hidden-section section-card">
+    <h2 class="text-3xl font-bold text-[#FF6F6F] mb-4">9. Créditos</h2>
+    <ul class="list-disc pl-6 text-gray-700 leading-loose">
+        <li>Laura Rojas</li>
+        <li>Mariana Angulo</li>
+        <li>Karen Pinilla</li>
+        <li>María Paula León</li>
+        <li>Maik</li>
+    </ul>
+</section>
+
+</main>
+
+<script>
+function openSection(id){
+    document.querySelectorAll("section").forEach(s => s.classList.add("hidden-section"));
+    document.getElementById(id).classList.remove("hidden-section");
+    window.scrollTo({top:0, behavior:'smooth'});
+}
+</script>
+
+</body>
+</html>
